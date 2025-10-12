@@ -7,21 +7,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="reg_box_title">
+    <div id="reg_box_title" >
         <p>Modern Registration Form</p>
     </div>
-    <form>
+    <form class="part">
         <section id="head">
             <h2>Student Registration Form</h2>
         </section>
         <section id="form_body">
+            <div id="first_box">
+            <span>
             <label for="name">First Name</label>
             <input type="text" id="name" placeholder="Enter the First Name">
+            </span>
             
-            <label for="name">Last Name</label>
-            <input type="text" id="last_name" placeholder="Enter the Last Name">
+            <span>
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" placeholder="Enter the Last Name"><br>
+            </span>
+            </div>
             
-            <label for="name">Date of Birth</label>
+            <div id="second_box">
+                <label for="name">Date of Birth</label><br>
             <select title="Day" class="dob"> 
                 <option>Day</option>
             </select>
@@ -30,27 +37,48 @@
             </select>
             <select  class="dob"> 
                 <option>Year</option>
-            </select>
+            </select><br>
+            </div>
+            
+            <div id="third_box">
+            <span>
             <label for="name">Email ID</label>
             <input type="email" id="email" placeholder="Enter the Email Address">
+            </span>
+
+            <span>
             <label for="name">Mobile Number</label>
-            <input type="tel" id="number" placeholder="Enter 10-digit Mobile Number" >
-            <label for="gender">Gender</label>
+            <input type="tel" id="number" placeholder="Enter 10-digit Mobile Number" ><br>
+            </span>
+            </div>
+
+            <div id="fourth_box">
+                 <label for="gender">Gender</label><br>
             <input type="radio" id="male" name="gender" value="male">
                     <label for="male">Male</label>
                     <input type="radio" id="female" name="gender" value="female">
-                    <label for="female">Female</label>
-            <label for="Address">Address</label>
-            <textarea name="Address" id="Address" placeholder="Enter Your foll address"></textarea>
+                    <label for="female">Female</label><br>
+            </div>
+   
+            <label for="Address">Address</label><br>
+            <textarea name="Address" id="Address" placeholder="Enter Your foll address"></textarea><br>
 
+            <div id="fifth_box">
+            <span>
             <label for="City">City</label>
             <input type="text" id="city" placeholder="Enter city">
+            </span>
+            <span>
             <label for="pin">Pin Code</label>
             <input type="tel" id="pin" placeholder="Enter 6-digit PIN code" >
+            </span>
+            <span>
             <label for="state">State</label>
             <input type="tel" id="number" placeholder="Enter state" >
+            </span>
+            </div>
 
-            <label for="state">Country</label>
+            <label for="state">Country</label><br>
             <select name="country" id="country" >
             <option>Select Country</option>
             <option>India</option>
@@ -58,17 +86,75 @@
             <option>Dubai</option>
             <option>Saudi Arabia</option>
             <option>Kuwait</option>
-            </select>
+            </select><br>
             
             
-            <label for="hobbie">Hobbies</label><br>
-            <input type="checkbox" id="drawing" placeholder="Drawing"><label for="drawing">Drawing</label> 
-            <input type="checkbox" id="singing" placeholder="Drawing"><label for="drawing">Drawing</label> 
-            <input type="checkbox" id="drawing" placeholder="Drawing"><label for="drawing">Drawing</label> 
-            <input type="checkbox" id="drawing" placeholder="Drawing"><label for="drawing">Drawing</label> 
-            <input type="checkbox" id="drawing" placeholder="Drawing"><label for="drawing">Drawing</label> 
+            <div id="sixth_box">
+                <label for="hobbie">Hobbies</label><br>
+            <input type="checkbox" id="drawing"><label for="drawing">Drawing</label> 
+            <input type="checkbox" id="singing"><label for="drawing">Singing</label> 
+            <input type="checkbox" id="dancing"><label for="drawing">Dancing</label> 
+            <input type="checkbox" id="sketching"><label for="drawing">Sketching</label> 
+            <input type="checkbox" id="other"><label for="drawing">Other</label>
+            </div>
+
+            <label for="Qualification">Qualification</label>
+            <table>
+                <thead>
+                    <td>Sr.no</td>
+                    <td>Examination</td>
+                    <td>Boards</td>
+                    <td>percentage</td>
+                    <td>Year of Passing</td>
+                </thead>
+                <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Class X</td>
+                            <td><input type="text" class="tinput"></td>
+                            <td><input type="text" class="tinput"></td>
+                            <td><input type="text" class="tinput"></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Class XII</td>
+                            <td><input type="text" class="tinput"></td>
+                            <td><input type="text" class="tinput"></td>
+                            <td><input type="text" class="tinput"></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Graduation</td>
+                            <td><input type="text" class="tinput"></td>
+                            <td><input type="text" class="tinput"></td>
+                            <td><input type="text" class="tinput"></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Masters</td>
+                            <td><input type="text" class="tinput"></td>
+                            <td><input type="text" class="tinput"></td>
+                            <td><input type="text" class="tinput"></td>
+                        </tr>
+                </tbody>
+            </table>
+
+            <span>
+            <label for="Courses">Course Applied For</label><br>
+            <input type="radio" id="BCA" name="Course"><label for="BCA">BCA</label>
+            <input type="radio" id="B.com" name="Course"><label for="B.com">B.com</label>
+            <input type="radio" id="B.Sc" name="Course"><label for="B.Sc">B.Sc</label>
+            <input type="radio" id="B.A" name="Course"><label for="B.A">B.A</label>
+            </span>
             
         </section>
+        <section id="submit" style="display: flex;justify-content: flex-end;">
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </section>
     </form>
+    <div id="pform" class="part">
+        <p style="color: green; margin: 10px;"><b>Professional Registration Form</b></p>
+    </div>
 </body>
 </html>
