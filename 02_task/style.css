@@ -28,17 +28,17 @@ body{
     left: 0;
     width: 100%;
     height: 4px;
-    background: linear-gradient(to right, #00aaff, #00d09c);
+    background: linear-gradient(to right,#00aaff, #00c26e);
 }
 
 .timeline-item{
-    width: 22%;
+    width: 23%;
     background: white;
     padding: 20px 10px;
     border-radius: 10px; 
-    box-shadow: 0 0 1px 0;
     position: relative;
     z-index: 1;
+    text-align: center;
 }
 
 .circle{
@@ -56,6 +56,15 @@ body{
     background: #00c26e;
 }
 
+.timeline-container:has(.timeline-item:nth-child(2):hover) 
+.timeline-item:first-child .circle,
+.timeline-container:has(.timeline-item:nth-child(3):hover) 
+.timeline-item:first-child .circle,
+.timeline-container:has(.timeline-item:nth-child(4):hover) 
+.timeline-item:first-child .circle {
+    background: #00aaff;
+}
+
 .timeline-item h3 {
   color: #0077cc;
   font-size: 20px;
@@ -66,5 +75,80 @@ body{
   font-size: 14px;
   color: #555;
   line-height: 1.5;
+}
+
+
+.timeline-item:hover .circle {
+    background: #00c26e;
+}
+
+Hover effect
+.timeline-item:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover .circle {
+    background: #00c26e; 
+    transition: background 0.3s ease;
+}
+
+@media (min-width: 1059px) {
+    .timeline-item {
+        width: 20%;
+    }
+    .timeline-item p {
+    font-size: 25px;
+    }
+    .timeline-item h3 {
+  font-size: 29px;
+  margin-bottom: 25px;
+}
+    .circle {
+    top: -50px;
+    width: 20px;
+    height: 20px;
+}
+.timeline-container::before {
+    top: 37px;
+    height: 5px;
+}
+}
+@media (max-width: 775px) {
+    .timeline-item {
+        width: 23%;
+    }
+    .timeline-item p {
+    font-size: 11px;
+    }
+    .timeline-item h3 {
+  font-size: 15px;
+}
+    .circle {
+    top: -50px;
+}
+.timeline-container::before {
+    top: 37px;
+    height: 5px;
+}
+}
+@media (max-width: 480px) {
+    .timeline-item {
+        width: 23%;
+    }
+    .timeline-item p {
+    font-size: 4.5px;
+    }
+    .timeline-item h3 {
+  font-size: 8px;
+}
+    .circle {
+    top: -20px;
+    width: 8px;
+    height: 8px;
+}
+.timeline-container::before {
+    height: 4px;
+}
 }
 
