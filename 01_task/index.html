@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>task 1</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="../images/fevicon.png">
+    
 </head>
 <body>
     <div id="reg_box_title" >
@@ -18,12 +20,12 @@
             <div id="first_box">
             <span>
             <label for="name">First Name</label>
-            <input type="text" id="name" placeholder="Enter the First Name">
+            <input type="text" id="name" placeholder="Enter the First Name" oninvalid="this.setCustomValidity('please enter your First name')" oninput="this.setCustomValidity"  required>
             </span>
             
             <span>
             <label for="last_name">Last Name</label>
-            <input type="text" id="last_name" placeholder="Enter the Last Name"><br>
+            <input type="text" id="last_name" placeholder="Enter the Last Name" oninvalid="this.setCustomValidity('please enter your Last name')" oninput="this.setCustomValidity" required><br>
             </span>
             </div>
             
@@ -43,12 +45,12 @@
             <div id="third_box">
             <span>
             <label for="name">Email ID</label>
-            <input type="email" id="email" placeholder="Enter the Email Address">
+            <input type="email" id="email" placeholder="Enter the Email Address" oninvalid="this.setCustomValidity('please enter your Email')" oninput="this.setCustomValidity" required >
             </span>
 
             <span>
             <label for="name">Mobile Number</label>
-            <input type="tel" id="number" placeholder="Enter 10-digit Mobile Number" maxlength="10" ><br>
+            <input type="tel" id="number" placeholder="Enter 10-digit Mobile Number" maxlength="10" oninvalid="this.setCustomValidity('please enter your Mobile')" oninput="this.setCustomValidity" required><br>
             </span>
             </div>
 
@@ -61,7 +63,7 @@
             </div>
    
             <label for="Address">Address</label><br>
-            <textarea name="Address" id="Address" placeholder="Enter Your foll address"></textarea><br>
+            <textarea name="Address" id="Address" placeholder="Enter Your foll address" oninvalid="this.setCustomValidity('please enter your Address')" oninput="this.setCustomValidity" required></textarea><br>
 
             <div id="fifth_box">
             <span>
@@ -70,7 +72,7 @@
             </span>
             <span>
             <label for="pin">Pin Code</label>
-            <input type="tel" id="pin" placeholder="Enter 6-digit PIN code" maxlength="6">
+            <input type="tel" id="pin" placeholder="Enter 6-digit PIN code" maxlength="6" oninvalid="this.setCustomValidity('please enter your PIN')" oninput="this.setCustomValidity" required>
             </span>
             <span>
             <label for="state">State</label>
@@ -112,8 +114,8 @@
                             <td>1</td>
                             <td>Class X</td>
                             <td><input type="text" class="tinput"></td>
-                            <td><input type="text" class="tinput"></td>
-                            <td><input type="text" class="tinput"></td>
+                            <td><input type="number" maxlength="3" class="tinput"></td>
+                            <td><input type="number" class="tinput" maxlength="4"></td>
                         </tr>
                         <tr>
                             <td>2</td>

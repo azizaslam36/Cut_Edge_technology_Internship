@@ -23,12 +23,16 @@ body {
 ---------------------------------*/
 #reg_box_title {
   background: #fff;
-  border-radius: 10px;
+  border-radius: 1px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   padding: 15px 25px;
   margin-bottom: 20px;
-  width: 80%;
+  width: 50%;
   text-align: center;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #reg_box_title p {
@@ -42,8 +46,8 @@ body {
 ---------------------------------*/
 form.part {
   background: #fff;
-  width: 80%;
-  border-radius: 12px;
+  width: 50%;
+  border-radius: 5px;
   overflow: hidden;
   box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.1);
   padding-bottom: 18px 0;
@@ -68,7 +72,7 @@ form.part {
    Form Body
 ---------------------------------*/
 #form_body {
-  background: linear-gradient(to bottom, #ffffff, #fff4fa);
+  background: linear-gradient(to Bottom right,#f6f1f8,#f4d7d7);
   padding: 25px 40px;
 }
 
@@ -212,12 +216,16 @@ button:hover {
 ---------------------------------*/
 #pform {
   background: #fff;
-  border-radius: 10px;
+  border-radius: 1px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   padding: 12px 25px;
   margin-top: 20px;
-  width: 80%;
+  width: 50%;
   text-align: center;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #pform p {
